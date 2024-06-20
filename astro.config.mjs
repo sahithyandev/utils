@@ -11,10 +11,17 @@ export default defineConfig({
 			social: {
 				github: "https://github.com/sahithyandev/utils",
 			},
+			tableOfContents: false,
 			sidebar: [
 				{
 					label: "Getting Started",
 					link: "/getting-started",
+				},
+				{
+					label: "Numerical utils",
+					autogenerate: {
+						directory: "numerical",
+					},
 				},
 				{
 					label: "Guides",
@@ -25,12 +32,6 @@ export default defineConfig({
 							link: "/guides/example/",
 						},
 					],
-				},
-				{
-					label: "Reference",
-					autogenerate: {
-						directory: "reference",
-					},
 				},
 			],
 		}),
