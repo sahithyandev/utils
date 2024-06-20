@@ -15,7 +15,7 @@ fi
 filename="$1"
 
 # Space-separated list of first stage prefixes
-first_stage_prefixes="docs: fix: feat: feat(dev): chore: refactor: deps:"
+first_stage_prefixes="docs: fix: feat: feat(dev): chore: refactor: deps: style:"
 
 # Read the first line from the file
 read -r first_line < "$filename"
