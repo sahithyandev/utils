@@ -5,6 +5,12 @@ export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 		extend: {
+			fontSize: {
+				md: "1.07rem",
+			},
+			lineHeight: {
+				md: "1.5rem",
+			},
 			fontFamily: {
 				sans: ["Inter"],
 				mono: ['"JetBrains Mono"'],

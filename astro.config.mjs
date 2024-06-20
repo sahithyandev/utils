@@ -7,7 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: "sahithyan/utils",
-			customCss: ["./src/tailwind.css"],
+			customCss: ["./src/global.css"],
 			social: {
 				github: "https://github.com/sahithyandev/utils",
 			},
