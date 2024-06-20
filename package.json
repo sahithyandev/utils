@@ -10,7 +10,9 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "biome check && biome format",
-		"lint-fix": "biome check --write && biome format --write"
+		"lint-fix": "biome check --write && biome format --write",
+		"prettier-check": "prettier --check .",
+		"prettier-fix": "prettier --write ."
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
@@ -26,12 +28,14 @@
 		"@biomejs/biome": "^1.8.2",
 		"@types/bun": "^1.1.5",
 		"husky": "^9.0.11",
-		"lint-staged": "^15.2.7"
+		"lint-staged": "^15.2.7",
+		"prettier": "^3.3.2"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
 			"biome check --apply --no-errors-on-unmatched"
-		]
+		],
+		"*.{md,mdx}": ["prettier-fix"]
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }
