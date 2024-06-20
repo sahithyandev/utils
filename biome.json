@@ -3,8 +3,13 @@
 	"organizeImports": {
 		"enabled": true
 	},
+	"formatter": {
+		"enabled": true,
+		"ignore": [".astro"]
+	},
 	"linter": {
 		"enabled": true,
+		"ignore": [".astro"],
 		"rules": {
 			"recommended": true
 		}

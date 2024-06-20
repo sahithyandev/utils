@@ -1,36 +1,34 @@
 {
-  "name": "utils",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "prepare": "husky || true",
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "biome check && biome format",
-    "lint-fix": "biome check --write && biome format --write"
-  },
-  "dependencies": {
-    "@astrojs/starlight": "^0.24.3",
-    "astro": "^4.10.2",
-    "sharp": "^0.32.5",
-    "@astrojs/check": "^0.7.0",
-    "typescript": "^5.5.2"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.2",
-    "@types/bun": "^1.1.5",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7"
-  },
-  "lint-staged": {
-    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "biome check --apply --no-errors-on-unmatched"
-    ]
-  },
-  "trustedDependencies": [
-    "@biomejs/biome"
-  ]
+	"name": "utils",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"prepare": "husky || true",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "biome check && biome format",
+		"lint-fix": "biome check --write && biome format --write"
+	},
+	"dependencies": {
+		"@astrojs/starlight": "^0.24.3",
+		"astro": "^4.10.2",
+		"sharp": "^0.32.5",
+		"@astrojs/check": "^0.7.0",
+		"typescript": "^5.5.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.2",
+		"@types/bun": "^1.1.5",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.7"
+	},
+	"lint-staged": {
+		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+			"biome check --apply --no-errors-on-unmatched"
+		]
+	},
+	"trustedDependencies": ["@biomejs/biome"]
 }
