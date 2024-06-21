@@ -12,6 +12,9 @@ export default defineConfig({
 				github: "https://github.com/sahithyandev/utils",
 			},
 			tableOfContents: false,
+			components: {
+				Hero: "./src/components/Hero.astro",
+			},
 			sidebar: [
 				{
 					label: "Getting Started",
