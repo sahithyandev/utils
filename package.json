@@ -9,10 +9,8 @@
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"lint": "biome check && biome format",
-		"lint-fix": "biome check --write && biome format --write",
-		"prettier-check": "prettier --check .",
-		"prettier-fix": "prettier --write ."
+		"lint": "prettier --check .; biome check; biome format",
+		"lint-fix": "prettier --write . && biome check --write && biome format --write"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
