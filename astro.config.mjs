@@ -27,6 +27,12 @@ export default defineConfig({
 					},
 				},
 				{
+					label: "String utils",
+					autogenerate: {
+						directory: "string-utils",
+					},
+				},
+				{
 					label: "Guides",
 					items: [
 						// Each item here is one entry in the navigation menu.
