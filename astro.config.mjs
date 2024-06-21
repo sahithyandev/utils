@@ -21,6 +21,12 @@ export default defineConfig({
 					link: "/getting-started",
 				},
 				{
+					label: "Common",
+					autogenerate: {
+						directory: "common",
+					},
+				},
+				{
 					label: "Numerical utils",
 					autogenerate: {
 						directory: "numerical",
