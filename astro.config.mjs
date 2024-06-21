@@ -32,16 +32,6 @@ export default defineConfig({
 						directory: "string-utils",
 					},
 				},
-				{
-					label: "Guides",
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{
-							label: "Example Guide",
-							link: "/guides/example/",
-						},
-					],
-				},
 			],
 		}),
 		tailwind({
