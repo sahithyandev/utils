@@ -35,5 +35,5 @@
 		],
 		"*.{md,mdx}": ["prettier --check ."]
 	},
-	"trustedDependencies": ["@biomejs/biome"]
+	"trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"]
 }
