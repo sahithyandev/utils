@@ -38,6 +38,12 @@ export default defineConfig({
 						directory: "string-utils",
 					},
 				},
+				{
+					label: "Type utils",
+					autogenerate: {
+						directory: "type-utils",
+					},
+				},
 			],
 		}),
 		tailwind({
