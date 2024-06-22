@@ -7,6 +7,16 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: "sahithyan/utils",
+			description: "Copy-pastable utilities and code snippets",
+			head: [
+				{
+					tag: "meta",
+					attrs: {
+						property: "og:title",
+					},
+					content: "sahithyan/utils",
+				},
+			],
 			customCss: ["./src/global.css"],
 			social: {
 				github: "https://github.com/sahithyandev/utils",
