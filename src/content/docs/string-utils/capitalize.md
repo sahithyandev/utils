@@ -4,7 +4,7 @@ title: capitalize
 
 ```ts
 export function capitalize(word: string) {
-	return word.charAt(0).toUpperCase().concat(word.slice(1));
+	return word.charAt(0).toUpperCase().concat(word.slice(1).toLowerCase());
 }
 ```
 
