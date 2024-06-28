@@ -6,6 +6,9 @@
 	--sl-content-width: 68rem;
 	font-size: 16px;
 }
+* {
+	font-variant-ligatures: none;
+}
 
 p {
 	@apply text-md;
