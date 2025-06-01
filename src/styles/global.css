@@ -1,5 +1,13 @@
-@import "tailwindcss";
+@layer base, starlight, theme, components, utilities;
+
+@import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
 
 :root {
+	--sl-content-width: 68rem;
 	font-size: 18px;
+}
+* {
+	font-variant-ligatures: none;
 }
