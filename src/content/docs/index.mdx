@@ -1,36 +1,49 @@
 ---
-title: Welcome to Starlight
+title: Copy-pastable utility functions & code snippets
 description: Get started building your docs site with Starlight.
 template: splash
+head:
+  - tag: title
+    content: sahithyan/utils
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: No more dependencies to manage
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /getting-started
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+
+    - text: View on GitHub
+      link: https://github.com/sahithyandev/utils
       icon: external
-      variant: minimal
+      variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+## What's this?
 
-## Next steps
+sahithyan/utils is a copy-pastable library of code blocks. You don't install
+anything; just copy-paste the required functions and be done. No more utility
+libraries to keep track of.
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+## Why?
+
+I found myself copying utility functions from one project to another. It was
+not-so-efficient.
+
+Usually, we may want to publish the functions as a package to npm or jsr. But we
+don't always want all the functions in all of our projects. To avoid that issue,
+we can split up the package into smaller packages. That introduces too much of
+packages to manage.
+
+Heavily inspired by [shadcn/ui](https://ui.shadcn.com).
+
+## How to use?
+
+You just find and copy the function you want to use. **You don't install
+anything**.
+
+## How to contribute?
+
+This project is open source. Source code is available on GitHub at
+[sahithyandev/utils](https://github.com/sahithyandev/utils). PRs and issues are
+welcome.
