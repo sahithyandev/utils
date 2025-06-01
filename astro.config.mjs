@@ -54,25 +54,25 @@ export default defineConfig({
 							{
 								label: "Common",
 								autogenerate: {
-									directory: "common",
+									directory: "ts/common",
 								},
 							},
 							{
 								label: "Numerical utils",
 								autogenerate: {
-									directory: "numerical",
+									directory: "ts/numerical",
 								},
 							},
 							{
 								label: "String utils",
 								autogenerate: {
-									directory: "string-utils",
+									directory: "ts/string-utils",
 								},
 							},
 							{
 								label: "Type utils",
 								autogenerate: {
-									directory: "type-utils",
+									directory: "ts/type-utils",
 								},
 							},
 						],
@@ -84,25 +84,25 @@ export default defineConfig({
 							{
 								label: "Common",
 								autogenerate: {
-									directory: "common",
+									directory: "cpp/common",
 								},
 							},
 							{
 								label: "Numerical utils",
 								autogenerate: {
-									directory: "numerical",
+									directory: "cpp/numerical",
 								},
 							},
 							{
 								label: "String utils",
 								autogenerate: {
-									directory: "string-utils",
+									directory: "cpp/string-utils",
 								},
 							},
 							{
 								label: "Type utils",
 								autogenerate: {
-									directory: "type-utils",
+									directory: "cpp/type-utils",
 								},
 							},
 						],
