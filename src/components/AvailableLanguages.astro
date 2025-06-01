@@ -1,0 +1,32 @@
+---
+interface Props {
+	languages: Array<{
+		name: string;
+		url: string;
+	}>;
+}
+
+const { languages } = Astro.props;
+---
+
+<section>
+	<h2>Included Languages</h2>
+	<ul class="list-none p-0 m-0">
+		{
+			languages && languages.length > 0
+				? languages.map((lang) => (
+						<li class="mb-2 last:mb-0">
+							<a
+								href={lang.url}
+								class="text-blue-600 hover:text-blue-800 transition-colors dark:text-blue-400 dark:hover:text-blue-300 font-semibold text-lg"
+							>
+								<div class="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex items-center transition hover:shadow-lg">
+									{lang.name}
+								</div>
+							</a>
+						</li>
+					))
+				: null
+		}
+	</ul>
+</section>
