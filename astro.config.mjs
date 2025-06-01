@@ -1,14 +1,20 @@
+import starlight from "@astrojs/starlight";
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
-import starlightSidebarTopicsPlugin from 'starlight-sidebar-topics';
+import { defineConfig } from "astro/config";
+import starlightSidebarTopicsPlugin from "starlight-sidebar-topics";
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: "My Docs",
+			social: [
+				{
+					icon: "github",
+					label: "GitHub",
+					href: "https://github.com/withastro/starlight",
+				},
+			],
 			plugins: [
 				starlightSidebarTopicsPlugin([
 					{
@@ -41,7 +47,7 @@ export default defineConfig({
 							},
 						],
 					},
-				])
+				]),
 			],
 		}),
 	],
