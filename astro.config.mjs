@@ -1,5 +1,5 @@
-import starlight from "@astrojs/starlight";
 // @ts-check
+import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightSidebarTopicsPlugin from "starlight-sidebar-topics";
 
@@ -9,7 +9,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: "My Docs",
+			title: "sahithyan/utils",
 			social: [
 				{
 					icon: "github",
@@ -17,6 +17,9 @@ export default defineConfig({
 					href: "https://github.com/withastro/starlight",
 				},
 			],
+			components: {
+				Hero: "./src/components/Head.astro",
+			},
 			customCss: ["./src/styles/global.css"],
 			plugins: [
 				starlightSidebarTopicsPlugin([
