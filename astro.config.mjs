@@ -3,6 +3,8 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightSidebarTopicsPlugin from "starlight-sidebar-topics";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
@@ -15,6 +17,7 @@ export default defineConfig({
 					href: "https://github.com/withastro/starlight",
 				},
 			],
+			customCss: ["./src/styles/global.css"],
 			plugins: [
 				starlightSidebarTopicsPlugin([
 					{
@@ -51,4 +54,7 @@ export default defineConfig({
 			],
 		}),
 	],
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });
