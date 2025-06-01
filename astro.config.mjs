@@ -1,8 +1,8 @@
 // @ts-check
 import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import starlightSidebarTopicsPlugin from "starlight-sidebar-topics";
-import tailwindcss from "@tailwindcss/vite";
 
 /**
  * @type {Parameters<typeof starlight>[0]["head"]}
