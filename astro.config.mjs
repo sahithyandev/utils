@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightSidebarTopicsPlugin from 'starlight-sidebar-topics';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,7 +9,12 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
+			plugins: [
+				starlightSidebarTopicsPlugin([
+					{
+						label: "TypeScript",
+						link: "/ts",
+						items: [
 				{
 					label: 'Guides',
 					items: [
@@ -20,6 +26,9 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+						]
+					}
+				])
 			],
 		}),
 	],
