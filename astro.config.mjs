@@ -77,6 +77,36 @@ export default defineConfig({
 							},
 						],
 					},
+					{
+						label: "C++",
+						link: "/cpp/",
+						items: [
+							{
+								label: "Common",
+								autogenerate: {
+									directory: "common",
+								},
+							},
+							{
+								label: "Numerical utils",
+								autogenerate: {
+									directory: "numerical",
+								},
+							},
+							{
+								label: "String utils",
+								autogenerate: {
+									directory: "string-utils",
+								},
+							},
+							{
+								label: "Type utils",
+								autogenerate: {
+									directory: "type-utils",
+								},
+							},
+						],
+					},
 				]),
 			],
 		}),
