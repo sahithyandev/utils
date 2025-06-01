@@ -82,9 +82,9 @@ export default defineConfig({
 						link: "/cpp/",
 						items: [
 							{
-								label: "Common",
+								label: "Input",
 								autogenerate: {
-									directory: "cpp/common",
+									directory: "cpp/input",
 								},
 							},
 							{
@@ -100,9 +100,15 @@ export default defineConfig({
 								},
 							},
 							{
-								label: "Type utils",
+								label: "Vector utils",
 								autogenerate: {
-									directory: "cpp/type-utils",
+									directory: "cpp/vector-utils",
+								},
+							},
+							{
+								label: "Other",
+								autogenerate: {
+									directory: "cpp/other",
 								},
 							},
 						],

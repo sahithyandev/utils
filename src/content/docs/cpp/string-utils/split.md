@@ -1,0 +1,15 @@
+---
+title: Split
+---
+
+```cpp
+vector<string> split(string str, char delimiter) {
+    vector<string> tokens;
+    stringstream ss(str);
+    string token;
+    while (getline(ss, token, delimiter)) {
+        tokens.push_back(token);
+    }
+    return tokens;
+}
+```
