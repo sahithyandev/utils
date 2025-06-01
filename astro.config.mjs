@@ -33,11 +33,12 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: "sahithyan/utils",
+			description: "A collection of copy-pastable utilities.",
 			social: [
 				{
 					icon: "github",
 					label: "GitHub",
-					href: "https://github.com/withastro/starlight",
+					href: "https://github.com/sahithyandev/utils",
 				},
 			],
 			head: STARLIGHT_CONFIG_HEAD,
