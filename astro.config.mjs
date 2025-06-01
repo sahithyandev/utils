@@ -13,21 +13,34 @@ export default defineConfig({
 				starlightSidebarTopicsPlugin([
 					{
 						label: "TypeScript",
-						link: "/ts",
+						link: "/ts/",
 						items: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-						]
-					}
+							{
+								label: "Common",
+								autogenerate: {
+									directory: "common",
+								},
+							},
+							{
+								label: "Numerical utils",
+								autogenerate: {
+									directory: "numerical",
+								},
+							},
+							{
+								label: "String utils",
+								autogenerate: {
+									directory: "string-utils",
+								},
+							},
+							{
+								label: "Type utils",
+								autogenerate: {
+									directory: "type-utils",
+								},
+							},
+						],
+					},
 				])
 			],
 		}),
