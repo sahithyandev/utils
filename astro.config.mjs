@@ -76,6 +76,12 @@ export default defineConfig({
 									directory: "ts/type-utils",
 								},
 							},
+							{
+								label: "React Hooks",
+								autogenerate: {
+									directory: "ts/react-hooks",
+								},
+							},
 						],
 					},
 					{
